@@ -1,0 +1,25 @@
+name: openapi_conformance_dio
+description: >-
+  Dio interceptor that checks every request and response against your OpenAPI
+  spec in tests, including traffic served by mock adapters.
+version: 1.0.0
+repository: https://github.com/mohammad19169/openapi_conformance/tree/main/packages/openapi_conformance_dio
+issue_tracker: https://github.com/mohammad19169/openapi_conformance/issues
+topics:
+  - openapi
+  - dio
+  - testing
+  - contract-testing
+  - mock
+resolution: workspace
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  dio: ^5.8.0
+  openapi_conformance: ^1.0.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.15

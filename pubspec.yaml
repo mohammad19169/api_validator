@@ -1,0 +1,15 @@
+name: openapi_conformance_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.8.0
+
+workspace:
+  - packages/openapi_conformance
+  - packages/openapi_conformance_dio
+  - packages/openapi_conformance_http
+  - packages/openapi_conformance_test
+  - packages/openapi_conformance_flutter
+
+dev_dependencies:
+  lints: ^6.0.0

@@ -1,0 +1,25 @@
+name: openapi_conformance_http
+description: >-
+  package:http client wrapper that checks every request and response against
+  your OpenAPI spec, including responses from MockClient.
+version: 1.0.0
+repository: https://github.com/mohammad19169/openapi_conformance/tree/main/packages/openapi_conformance_http
+issue_tracker: https://github.com/mohammad19169/openapi_conformance/issues
+topics:
+  - openapi
+  - http
+  - testing
+  - contract-testing
+  - mock
+resolution: workspace
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  http: ^1.4.0
+  openapi_conformance: ^1.0.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.15

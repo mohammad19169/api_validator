@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        channel: [stable]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: ${{ matrix.channel }}
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: flutter analyze --fatal-infos
+      - name: Test Dart packages
+        run: |
+          for p in openapi_conformance openapi_conformance_dio openapi_conformance_http openapi_conformance_test; do
+            (cd packages/$p && dart test)
+          done
+      - name: Test Flutter package
+        working-directory: packages/openapi_conformance_flutter
+        run: flutter test
+
+  pana:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: dart pub global activate pana
+      - name: Score core package
+        working-directory: packages/openapi_conformance
+        run: dart pub global run pana --exit-code-threshold 0 .

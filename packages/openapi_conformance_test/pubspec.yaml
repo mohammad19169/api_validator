@@ -2,7 +2,7 @@ name: openapi_conformance_test
 description: >-
   Test matchers and setup helpers for openapi_conformance. Fail tests on spec
   violations and write API coverage reports.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/mohammad19169/openapi_conformance/tree/main/packages/openapi_conformance_test
 issue_tracker: https://github.com/mohammad19169/openapi_conformance/issues
 topics:
@@ -19,7 +19,7 @@ environment:
 dependencies:
   matcher: ^0.12.17
   meta: ^1.16.0
-  openapi_conformance: ^1.0.0
+  openapi_conformance: ^1.0.1
   test_api: ">=0.7.0 <0.8.0"
 
 dev_dependencies:

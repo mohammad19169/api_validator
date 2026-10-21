@@ -1,3 +1,8 @@
+## 1.0.1
+
+- Fix the published package missing `lib/src/coverage`, which broke
+  analysis and API docs on pub.dev.
+
 ## 1.0.0
 
 Initial release.

@@ -1,7 +1,8 @@
 .dart_tool/
 build/
 pubspec.lock
-coverage/
+/coverage/
+/packages/*/coverage/
 doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies

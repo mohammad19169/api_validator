@@ -1,3 +1,8 @@
+## 1.0.1
+
+- Require openapi_conformance 1.0.1, which fixes a file missing from the
+  1.0.0 release.
+
 ## 1.0.0
 
 - Initial release.

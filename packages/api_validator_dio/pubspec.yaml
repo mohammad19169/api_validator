@@ -1,0 +1,25 @@
+name: api_validator_dio
+description: >-
+  Dio interceptor that validates every API request and response against your
+  OpenAPI (Swagger) spec, including responses from mock adapters.
+version: 1.0.0
+repository: https://github.com/mohammad19169/api_validator/tree/main/packages/api_validator_dio
+issue_tracker: https://github.com/mohammad19169/api_validator/issues
+topics:
+  - api
+  - dio
+  - openapi
+  - swagger
+  - validation
+resolution: workspace
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  api_validator: ^1.0.0
+  dio: ^5.8.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.15

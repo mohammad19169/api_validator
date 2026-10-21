@@ -1,15 +1,15 @@
-name: openapi_conformance_workspace
+name: api_validator_workspace
 publish_to: none
 
 environment:
   sdk: ^3.8.0
 
 workspace:
-  - packages/openapi_conformance
-  - packages/openapi_conformance_dio
-  - packages/openapi_conformance_http
-  - packages/openapi_conformance_test
-  - packages/openapi_conformance_flutter
+  - packages/api_validator
+  - packages/api_validator_dio
+  - packages/api_validator_http
+  - packages/api_validator_test
+  - packages/api_validator_flutter
 
 dev_dependencies:
   lints: ^6.0.0

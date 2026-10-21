@@ -1,0 +1,28 @@
+name: api_validator_flutter
+description: >-
+  Debug overlay for Flutter apps that lists API calls and shows which responses
+  break your OpenAPI (Swagger) spec, field by field.
+version: 1.0.0
+repository: https://github.com/mohammad19169/api_validator/tree/main/packages/api_validator_flutter
+issue_tracker: https://github.com/mohammad19169/api_validator/issues
+topics:
+  - api
+  - openapi
+  - swagger
+  - debugging
+  - network
+resolution: workspace
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.32.0"
+
+dependencies:
+  api_validator: ^1.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
